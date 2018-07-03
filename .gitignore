@@ -4,4 +4,5 @@ npm-debug.log
 _site/
 test/sample_dest/
 .nyc_output/
+.vscode/
 coverage.lcov
