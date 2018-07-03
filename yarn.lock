@@ -4750,9 +4750,9 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vfile-find-up@^3.0.0:
+vfile-find-down@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/vfile-find-up/-/vfile-find-up-3.0.0.tgz#c0cf7c0877926dea9c5e7c050f6fe59ce05d303e"
+  resolved "https://registry.yarnpkg.com/vfile-find-down/-/vfile-find-down-3.0.0.tgz#ed5cd50fa653b99435d06693a71f071a3ee6d149"
   dependencies:
     to-vfile "^4.0.0"
 

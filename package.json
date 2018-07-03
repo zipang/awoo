@@ -35,7 +35,7 @@
     "is-text-path": "1.0.1",
     "to-vfile": "5.0.0",
     "trough": "1.0.2",
-    "vfile-find-up": "^3.0.0",
+    "vfile-find-down": "^3.0.0",
     "walk": "2.3.12"
   },
   "devDependencies": {
