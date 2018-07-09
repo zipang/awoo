@@ -1,20 +1,16 @@
 {
-  "name": "awoo",
-  "version": "4.0.2",
-  "description": "small site generator",
+  "name": "vavawoo",
+  "version": "0.7.0",
+  "description": "vavawoo is an experimental fork of awoo, a static site generator inspired by metalsmith",
   "main": "lib/awoo.js",
-  "repository": "git@github.com:awoojs/awoo.git",
-  "author": "olivia <olivia@fastmail.com>",
-  "license": "AGPL-3.0+",
+  "repository": "github.com/zipang/vavawoo",
+  "original-author": "olivia <olivia@fastmail.com>",
   "scripts": {
-    "lint": "standard | snazzy",
     "ava": "unset DEBUG; ava --serial",
     "ava:ci": "unset DEBUG; nyc ava --serial",
     "ava:watch": "unset DEBUG; ava -w",
-    "test": "npm run lint && npm run ava:ci",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'update code of conduct'",
-    "deploy": "np"
+    "test": "npm run ava:ci",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "files": [
     "lib",
