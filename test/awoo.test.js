@@ -3,22 +3,18 @@ const vfile = require('vfile')
 const awoo = require('../lib/awoo')
 
 test('works correctly', async t => {
-  const plugin = () => {
-    return files => files.map(file => {
-      file.contents = 'haha test'
-      return file
-    })
-  }
+  const plugin = files => files.map(file => {
+    file.contents = 'haha test'
+    return file
+  })
 
-  const res = await awoo(site => {
-    site.config({
+  const res = await awoo(site =>
+    site({
       source: 'test/sample',
       no_write: true
     })
-
-    site.use(plugin)
-    return site
-  })
+    .use(plugin)
+  )
 
   t.is(res.files.find(f => f.basename === 'test.md').contents, 'haha test')
 })
@@ -44,10 +40,10 @@ test('correctly runs in integration mode', async t => {
     vfile({ path: 'a', contents: 'aaa' })
   ]
 
-  const res = await awoo.integration(site => {
-    site.use(plugin)
-    return site
-  }, files)
+  const res = await awoo.integration(
+    site => site().use(plugin),
+    files
+  )
 
   t.is(res.files[0].contents, 'test2')
 })
