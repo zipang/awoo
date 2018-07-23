@@ -2,6 +2,15 @@
 
 > is an experimental fork of [awoo]() by Olivia Hugger
 
+<div align="center">
+
+  <!-- package size -->
+  <a href="https://packagephobia.now.sh/result?p=vavawoo">
+    <img src="https://packagephobia.now.sh/badge?p=vavawoo"
+      alt="package size" />
+  </a>
+</div>
+
 **Table of Contents**
 
 ## Motivation
