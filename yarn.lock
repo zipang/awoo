@@ -2041,7 +2041,7 @@ got@^6.7.1:
     unzip-response "^2.0.1"
     url-parse-lax "^1.0.0"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
+graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -2709,6 +2709,12 @@ kind-of@^5.0.0:
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
+
+klaw@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/klaw/-/klaw-2.1.1.tgz#42b76894701169cc910fd0d19ce677b5fb378af1"
+  dependencies:
+    graceful-fs "^4.1.9"
 
 last-line-stream@^1.0.0:
   version "1.0.0"
@@ -4485,20 +4491,6 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-to-vfile@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/to-vfile/-/to-vfile-5.0.0.tgz#46248d86d931fa9061a6e3411922be8d8b09fc2f"
-  dependencies:
-    is-buffer "^2.0.0"
-    vfile "^3.0.0"
-
-to-vfile@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/to-vfile/-/to-vfile-4.0.0.tgz#465ade5fc2b9e97e6c80b854d378a5d0f4b5d04a"
-  dependencies:
-    is-buffer "^2.0.0"
-    vfile "^3.0.0"
-
 tough-cookie@~2.3.3:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.4.tgz#ec60cee38ac675063ffc97a5c18970578ee83655"
@@ -4663,12 +4655,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vfile-find-down@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/vfile-find-down/-/vfile-find-down-3.0.0.tgz#ed5cd50fa653b99435d06693a71f071a3ee6d149"
-  dependencies:
-    to-vfile "^4.0.0"
 
 vfile-message@^1.0.0:
   version "1.0.1"
