@@ -1,6 +1,6 @@
 {
   "name": "vavawoo",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "vavawoo is an experimental fork of awoo, a static site generator inspired by metalsmith",
   "main": "lib/awoo.js",
   "repository": "github.com/zipang/vavawoo",
